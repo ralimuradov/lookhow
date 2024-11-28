@@ -1,0 +1,23 @@
+TextArea {
+    border: $panel-lighten-3 round;
+
+}   
+
+RunArea {
+    width: 100%;
+    height: 10;
+    layer: sidebar;
+    dock: bottom;
+    offset-y: 10;
+    border: $panel-lighten-3 round;
+    transition: offset 200ms;
+
+    &.-visible {
+        offset-y: -1;
+    }
+
+    & > Vertical {
+        margin: 1 1;
+    }
+}
+
